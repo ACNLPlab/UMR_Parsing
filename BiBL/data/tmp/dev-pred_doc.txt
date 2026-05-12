@@ -1,0 +1,102 @@
+# ::snt with his pears ,
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114023
+(z0 / pear
+    :poss (z1 / person
+              :refer-person 3rd)
+    :ARG1 (z2 / pear
+              :poss (z3 / pear)))
+
+# ::alignment s110h2: 0-0 s110e: 0-0 s110h3: 0-0 s110p: 2-2 s110p2: 3-3
+# ::document (s110s0 / sentence :coref ((s97t :same-entity s110p2) (s109p :same-entity s110p)))
+# ::snt I'm giving you all these details .
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114032
+(z0 / anyway
+    :refer-person 1st)
+
+# ::alignment s43a: 4-4 s43d: 6-6 s43g: 2-2 s43p: 1-1 s43p2: 3-3 s43t: 5-5
+# ::document (s43s0 / sentence :temporal ((present-reference :overlap s43g)) :modal ((root :modal author) (author :full-affirmative s43g)) :coref ((s14p :same-entity s43p) (s36p :same-entity s43p2)))
+# ::snt they don't e . . I don't think they even look at each other ,
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114035
+(z0 / look-01
+    :ARG0 (z1 / person
+              :refer-person 3rd)
+    :ARG1 (z2 / person
+              :refer-person 3rd))
+
+# ::alignment s32t: 8-8 s32p3: 6-6 s32l: 11-11 s32a: 0-0 s32p: 0-0 s32p2: 0-0 s32e: 10-10
+# ::document (s32s0 / sentence :temporal ((s30c :overlap s32l)) :modal ((root :modal author) (author :partial-affirmative s32t) (author :full-negative s32l)) :coref ((s31p :same-entity s32p) (s31p2 :same-entity s32p2) (s14p :same-entity s32p3)))
+# ::snt . . chong chong chong chong .
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114038
+(z0 / anyway)
+
+# ::alignment s123e: 0-0 s123t: 0-0 s123a: 0-0 s123s: 3-3 s123s2: 4-4 s123s3: 5-5 s123s4: 6-6
+# ::document (s123s0 / sentence :coref ((s122t :same-entity s123t)))
+# ::snt . . on the front ?
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114040
+(z0 / anyway-place)
+
+# ::alignment s64f: 5-5 s64t: 0-0
+# ::document (s64s0 / sentence :coref ((s63b :same-entity s64t)))
+# ::snt so u--m the kid on the bicycle ,
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114043
+(z0 / anyway)
+
+# ::alignment s60b: 7-7 s60k: 4-4
+# ::document (s60s0 / sentence :coref ((s51p :same-entity s60k) (s51b :same-entity s60b)))
+# ::snt Anyway .
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114045
+(z0 / anyway)
+
+# ::alignment s57a: 1-1
+# ::document (s57s0 / sentence)
+# ::snt Okay?
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114047
+(z0 / anyway)
+
+# ::alignment s46e: 0-0 s46o: 1-1 s46r: 0-0
+# ::document (s46s0 / sentence :temporal ((s46e :overlap s46o)) :modal ((root :modal author) (author :neutral-affirmative s46o)) :coref ((s45h :same-event s46e)))
+# ::snt A--nd . . u--m the bicycle's way too big for the kid .
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114050
+(z0 / anyway)
+
+# ::alignment s42b: 6-6 s42b2: 9-9 s42h: 0-0 s42k: 12-12 s42t: 8-8
+# ::document (s42s0 / sentence :temporal ((s41e :overlap s42h)) :modal ((root :modal author) (author :full-affirmative s42h)) :coref ((s39k :same-entity s42k) (s39b2 :same-entity s42b)))
+# ::snt . . it's a bumpy road little dirt road ,
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114052
+(z0 / anyway)
+
+# ::alignment s115h: 1-1 s115r: 9-9 s115a: 0-0 s115b: 5-5 s115l: 7-7 s115h2: 0-0 s115d: 8-8
+# ::document (s115s0 / sentence :modal ((root :modal author) (author :full-affirmative s115h)))
+# ::snt And they-- help him get his bike u--p ,
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114054
+(z0 / help-01
+    :ARG0 (z1 / person
+              :refer-person 3rd)
+    :ARG1 (z2 / bike
+              :poss (z3 / person
+                        :refer-person 3rd)))
+
+# ::alignment s98h: 3-3 s98p: 2-2 s98g: 5-8 s98p2: 4-4 s98b: 7-7
+# ::document (s98s0 / sentence :temporal ((s97p :after s98h) (s98h :overlap s98g)) :modal ((root :modal author) (author :full-affirmative s98g) (author :full-affirmative s98h)) :coref ((s97p2 :same-entity s98p) (s94p3 :same-entity s98p2) (s71b :same-entity s98b)))
+# ::snt From the direction where the goat man left ,
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114056
+(z0 / anyway)
+
+# ::alignment s40d: 3-3 s40l: 8-8 s40m: 7-7 s40g: 6-6
+# ::document (s40s0 / sentence :modal ((root :modal author) (author :full-affirmative s40l)) :coref ((s33g :same-entity s40m) (s35a :same-entity s40g) (s39p :same-event s40d)))
+# ::snt And so one of them whistles .
+# ::annotator bart-amr
+# ::date 2025-06-09 15:12:31.114059
+(z0 / anyway)

@@ -1,0 +1,9 @@
+wandb: WARNING W&B installed but not logged in.  Run `wandb login` or set the WANDB_API_KEY env variable.
+Traceback (most recent call last):
+  File "bin/train.py", line 26, in <module>
+    from spring_amr.utils import instantiate_model_and_tokenizer, instantiate_loader, instantiate_model_and_tokenizer_multigen, instantiate_multitask_loader
+  File "/home/common/ACNLP/umr_parsing/BiBL/spring_amr/utils.py", line 8, in <module>
+    from spring_amr.modeling_bart import AMRBartForConditionalGeneration
+  File "/home/common/ACNLP/umr_parsing/BiBL/spring_amr/modeling_bart.py", line 20, in <module>
+    from transformers.generation_beam_search import BeamHypotheses
+ModuleNotFoundError: No module named 'transformers.generation_beam_search'

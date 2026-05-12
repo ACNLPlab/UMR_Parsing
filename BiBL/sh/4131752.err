@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "bin/train.py", line 26, in <module>
+    from spring_amr.utils import instantiate_model_and_tokenizer, instantiate_loader, instantiate_model_and_tokenizer_multigen, instantiate_multitask_loader
+  File "/home/common/ACNLP/amr_sense_numbers/aBiBL/BiBL/spring_amr/utils.py", line 8, in <module>
+    from spring_amr.modeling_bart import AMRBartForConditionalGeneration
+  File "/home/common/ACNLP/amr_sense_numbers/aBiBL/BiBL/spring_amr/modeling_bart.py", line 10, in <module>
+    from transformers import modeling_bart as bart
+ImportError: cannot import name 'modeling_bart'

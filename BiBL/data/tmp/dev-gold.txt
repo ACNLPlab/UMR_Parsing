@@ -1,0 +1,39 @@
+# ::snt with his pears ,
+(s110h2 / have-manner-91 :ARG1 (s110e / event) :ARG2 (s110h3 / have-91 :ARG1 (s110p / person :refer-person 3rd :refer-number singular) :ARG2 (s110p2 / pear :poss s110p :refer-number plural) :aspect state :modal-strength full-affirmative))
+
+# ::snt I'm giving you all these details .
+(s43g / give-01 :ARG0 (s43p / person :refer-person 1st :refer-number singular) :ARG1 (s43d / detail :quant (s43a / all) :mod (s43t / this) :refer-number plural) :ARG2 (s43p2 / person :refer-person 2nd :refer-number singular) :aspect activity)
+
+# ::snt they don't e . . I don't think they even look at each other ,
+(s32t / think-01 :ARG0 (s32p3 / person :refer-person 1st :refer-number singular) :ARG1 (s32l / look-01 :ARG0 (s32a / and :op1 (s32p / person :refer-person 3rd :refer-number singular) :op2 (s32p2 / person :refer-person 3rd :refer-number singular)) :ARG1 s32a :mod (s32e / even) :polarity - :aspect performance :modal-strength full-negative :modal-predicate s32t) :aspect state)
+
+# ::snt . . chong chong chong chong .
+(s123e / emit-sound-91 :ARG1 (s123t / thing) :ARG2 (s123a / and :op1 (s123s / string-entity :value "chong") :op2 (s123s2 / string-entity :value "chong") :op3 (s123s3 / string-entity :value "chong") :op4 (s123s4 / string-entity :value "chong")))
+
+# ::snt . . on the front ?
+(s64f / front :part-of (s64t / thing) :refer-number singular)
+
+# ::snt so u--m the kid on the bicycle ,
+(s60k / kid :refer-number singular :place (s60b / bicycle :refer-number singular))
+
+# ::snt Anyway .
+(s57a / anyway)
+
+# ::snt Okay?
+(s46o / okay-04 :ARG2-of (s46r / request-confirmation-91 :ARG1 (s46e / event)))
+
+# ::snt A--nd . . u--m the bicycle's way too big for the kid .
+(s42h / have-degree-92 :ARG1 (s42b / bicycle :refer-number singular) :ARG2 (s42b2 / big) :ARG3 (s42t / too :degree intensifier) :ARG6 (s42k / kid :refer-number singular) :aspect state)
+
+# ::snt . . it's a bumpy road little dirt road ,
+(s115h / have-mod-91 :ARG1 (s115r / road :refer-number singular) :ARG2 (s115a / and :op1 (s115b / bumpy) :op2 (s115l / little) :op3 (s115h2 / have-material-91 :ARG1 s115r :ARG2 (s115d / dirt))) :aspect state)
+
+# ::snt And they-- help him get his bike u--p ,
+(s98h / help-01 :ARG0 (s98p / person :refer-person 3rd :refer-number plural) :ARG1 (s98g / get-up-26 :ARG0 (s98p2 / person :refer-person 3rd :refer-number singular) :ARG1 (s98b / bike :refer-number singular :poss s98p2) :aspect performance) :ARG2 s98p2 :aspect endeavor)
+
+# ::snt From the direction where the goat man left ,
+(s40d / direction :ARG2-of (s40l / leave-11 :ARG0 (s40m / man :possession-of (s40g / goat :refer-number singular)) :aspect performance))
+
+# ::snt And so one of them whistles .
+(s104w / whistle-01 :ARG0 (s104p / person :refer-person 3rd :quant 1 :ARG1-of (s104i / include-91 :ARG2 (s104p2 / person :refer-person 3rd :refer-number plural))) :reason (s104e / event) :aspect endeavor)
+()

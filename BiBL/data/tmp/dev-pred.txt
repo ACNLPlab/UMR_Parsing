@@ -1,0 +1,64 @@
+# ::snt with his pears ,
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916873
+(z0 / thing)
+
+# ::snt I'm giving you all these details .
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916888
+(z0 / refer-person)
+
+# ::snt they don't e . . I don't think they even look at each other ,
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916891
+(z0 / refer-person)
+
+# ::snt . . chong chong chong chong .
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916893
+(z0 / chong)
+
+# ::snt . . on the front ?
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916896
+(z0 / refer-person)
+
+# ::snt so u--m the kid on the bicycle ,
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916898
+(z0 / refer-person)
+
+# ::snt Anyway .
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916900
+(z0 / refer)
+
+# ::snt Okay?
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916903
+(z0 / thing)
+
+# ::snt A--nd . . u--m the bicycle's way too big for the kid .
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916905
+(z0 / bicycle)
+
+# ::snt . . it's a bumpy road little dirt road ,
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916907
+(z0 / bumpy)
+
+# ::snt And they-- help him get his bike u--p ,
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916909
+(z0 / refer-person)
+
+# ::snt From the direction where the goat man left ,
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916910
+(z0 / goat)
+
+# ::snt And so one of them whistles .
+# ::annotator bart-amr
+# ::date 2025-06-04 20:12:29.916913
+(z0 / refer-person)

@@ -1,0 +1,151 @@
+{'name': 'BiBLg_0r_0', 'model': 'facebook/bart-large', 'penman_linearization': True, 'use_pointer_tokens': True, 'raw_graph': False, 'seeds': 2022, 'remove_wiki': False, 'dereify': False, 'collapse_name_ops': False, 'batch_size': 500, 'beam_size': 3, 'dropout': 0.25, 'attention_dropout': 0.05, 'smart_init': True, 'accum_steps': 10, 'warmup_steps': 1, 'training_steps': 50000, 'weight_decay': 0.004, 'grad_norm': 2.5, 'scheduler': 'constant', 'learning_rate': 4e-05, 'max_epochs': 10, 'save_checkpoints': True, 'log_wandb': False, 'warm_start': True, 'use_recategorization': False, 'best_loss': False, 'remove_longer_than': 5000, 'use_lm_loss': False, 'lm_loss_weight': 1.0, 'use_mask_loss': False, 'mask_loss_weight': 0.5, 'recap': False, 'recap_ratio': 0.2, 'recap_weight': 0.5, 'gen_max_len': 5000, 'gen_beam_size': 3, 'amr_mask_ratio': 0.5, 'nl_mask_ratio': 0.5, 'train': '/home/common/ACNLP/umr_parsing/umr2_data/train/sent/umr2-eng-train-bibl.txt', 'dev': '/home/common/ACNLP/umr_parsing/umr2_data/train/sent/umr2-eng-dev-bibl.txt', 'test': '/home/common/ACNLP/umr_parsing/umr2_data/train/sent/umr2-eng-test-bibl.txt', 'dev_gold': 'data/tmp/dev-gold_sent_umr2.txt', 'dev_pred': 'data/tmp/dev-pred_sent_umr2.txt'}
+Tokenizer Size: 53590
+AMRBartForConditionalGeneration(
+  (model): AMRBartModel(
+    (shared): Embedding(53590, 1024)
+    (encoder): AMRBartEncoder(
+      (embed_tokens): Embedding(53590, 1024)
+      (embed_positions): LearnedPositionalEmbedding(1026, 1024, padding_idx=1)
+      (layers): ModuleList(
+        (0-11): 12 x EncoderLayer(
+          (self_attn): SelfAttention(
+            (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          )
+          (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+          (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+          (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (layernorm_embedding): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+    )
+    (decoder): AMRBartDecoder(
+      (embed_tokens): Embedding(53590, 1024)
+      (embed_positions): LearnedPositionalEmbedding(1026, 1024, padding_idx=1)
+      (layers): ModuleList(
+        (0-11): 12 x DecoderLayer(
+          (self_attn): SelfAttention(
+            (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          )
+          (self_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+          (encoder_attn): SelfAttention(
+            (k_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (v_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (q_proj): Linear(in_features=1024, out_features=1024, bias=True)
+            (out_proj): Linear(in_features=1024, out_features=1024, bias=True)
+          )
+          (encoder_attn_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+          (fc1): Linear(in_features=1024, out_features=4096, bias=True)
+          (fc2): Linear(in_features=4096, out_features=1024, bias=True)
+          (final_layer_norm): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        )
+      )
+      (layernorm_embedding): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      (pointer_k): Linear(in_features=1024, out_features=1024, bias=True)
+      (pointer_q): Linear(in_features=1024, out_features=1024, bias=True)
+    )
+  )
+)
+BartConfig {
+  "activation_dropout": 0.1,
+  "activation_function": "gelu",
+  "add_bias_logits": false,
+  "add_final_layer_norm": false,
+  "architectures": [
+    "BartModel",
+    "BartForConditionalGeneration",
+    "BartForSequenceClassification"
+  ],
+  "attention_dropout": 0.05,
+  "bos_token_id": 0,
+  "classif_dropout": 0.0,
+  "d_model": 1024,
+  "decoder_attention_heads": 16,
+  "decoder_ffn_dim": 4096,
+  "decoder_layerdrop": 0.0,
+  "decoder_layers": 12,
+  "decoder_start_token_id": 2,
+  "dropout": 0.25,
+  "early_stopping": true,
+  "encoder_attention_heads": 16,
+  "encoder_ffn_dim": 4096,
+  "encoder_layerdrop": 0.0,
+  "encoder_layers": 12,
+  "eos_token_id": 2,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "init_std": 0.02,
+  "is_encoder_decoder": true,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "max_position_embeddings": 1024,
+  "model_type": "bart",
+  "normalize_before": false,
+  "normalize_embedding": true,
+  "num_beams": 4,
+  "num_hidden_layers": 12,
+  "output_attentions": true,
+  "output_past": false,
+  "pad_token_id": 1,
+  "prefix": " ",
+  "scale_embedding": false,
+  "static_position_embeddings": false,
+  "task_specific_params": {
+    "summarization": {
+      "length_penalty": 1.0,
+      "max_length": 128,
+      "min_length": 12,
+      "num_beams": 4
+    },
+    "summarization_cnn": {
+      "length_penalty": 2.0,
+      "max_length": 142,
+      "min_length": 56,
+      "num_beams": 4
+    },
+    "summarization_xsum": {
+      "length_penalty": 1.0,
+      "max_length": 62,
+      "min_length": 11,
+      "num_beams": 6
+    }
+  },
+  "vocab_size": 53590
+}
+
+Preparing Dataset...
+Dataset Preparation Over.
+/home/common/ACNLP/umr_parsing/BiBL/runs/10
+training started!
+training epoch: 1 | loss_amr: 0.218
+dev epoch: 1 | loss_amr: 0.198 | smatch: 0.334
+training epoch: 2 | loss_amr: 0.126
+dev epoch: 2 | loss_amr: 0.157 | smatch: 0.337
+training epoch: 3 | loss_amr: 0.072
+dev epoch: 3 | loss_amr: 0.154 | smatch: 0.336
+training epoch: 4 | loss_amr: 0.054
+dev epoch: 4 | loss_amr: 0.152 | smatch: 0.336
+training epoch: 5 | loss_amr: 0.038
+dev epoch: 5 | loss_amr: 0.168 | smatch: 0.334
+training epoch: 6 | loss_amr: 0.030
+dev epoch: 6 | loss_amr: 0.187 | smatch: 0.334
+training epoch: 7 | loss_amr: 0.020
+dev epoch: 7 | loss_amr: 0.195 | smatch: 0.335
+training epoch: 8 | loss_amr: 0.018
+dev epoch: 8 | loss_amr: 0.205 | smatch: 0.335
+training epoch: 9 | loss_amr: 0.014
+dev epoch: 9 | loss_amr: 0.213 | smatch: 0.334
+training epoch: 10 | loss_amr: 0.016
+dev epoch: 10 | loss_amr: 0.215 | smatch: 0.335
