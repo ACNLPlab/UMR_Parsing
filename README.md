@@ -8,7 +8,7 @@ To begin, either download the BiBL repo (https://github.com/KHAKhazeus/BiBL) or 
 First, download the checkpoint from the link  and move it to BiBL/best_ckpt.
 Then, create a conda env using BiBl/bibl_env.yml or the .yml from BiBL's repo.
 Next, create a test file in the format found in test.txt.
-Finally, run bibl-inf.sh to genreate UMR graphs. Remember to change it to point to your files and the correct checkpoint.
+Finally, change the bibl-inf.sh file to point to your text files and the correct checkpoint, and run bibl-inf.sh to generate the UMR graphs.
 
 ## How to use our T5 model:
 To use our T5 model, first download the UD-to-UMR pipeline repo (https://github.com/fjambe/UD2UMR). 
